@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/layout/layout";
+import { Homepage } from "./pages/home/homepage";
+import { DocsPage } from "./pages/docs/docspage";
+import { Download } from "./pages/download/download";
+import { Setup } from "./pages/setup/setup";
+import { SetupSteps } from "./pages/setup/steps/setupSteps";
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route exact={true} path={"/"} element={<Homepage />} />
+          <Route exact={true} path={"/setup"} element={<Setup />} />
+          <Route
+            exact={true}
+            path={"/setup/:gameId"}
+            element={<SetupSteps />}
+          />
+          <Route exact={true} path={"/documentation"} element={<DocsPage />} />
+          <Route exact={true} path={"/download"} element={<Download />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
-
-export default App;
