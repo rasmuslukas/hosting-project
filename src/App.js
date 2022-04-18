@@ -5,6 +5,7 @@ import { DocsPage } from "./pages/docs/docspage";
 import { Download } from "./pages/download/download";
 import { Setup } from "./pages/setup/setup";
 import { SetupSteps } from "./pages/setup/steps/setupSteps";
+import { Donate } from "./pages/donate/donate";
 
 export function App() {
   return (
@@ -20,6 +21,7 @@ export function App() {
           />
           <Route exact={true} path={"/documentation"} element={<DocsPage />} />
           <Route exact={true} path={"/download"} element={<Download />} />
+          <Route exact={true} path={"/donate"} element={<Donate />} />
         </Routes>
       </Layout>
     </Router>

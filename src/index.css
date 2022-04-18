@@ -7,10 +7,22 @@
   padding: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+}
 
 @layer components {
   .green {
-    background-color: #5B6355;
+    background-color: #5b6355;
   }
   .black {
     background-color: #242424;
