@@ -5,8 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 export function SectionSocial() {
   return (
     <>
-      <div className={"grid grid-rows-3 grid-flow-col gap-2 justify-center"}>
-        <h1 className={"text-4xl col-span-2 self-end pb-4"}>Join our community</h1>
+      <div className={"flex flex-col gap-4 tablet:grid tablet:grid-rows-3 tablet:grid-flow-col tablet:gap-2 justify-center"}>
+        <h1 className={"text-4xl ml-2 phone:ml-8 tablet:ml-0 tablet:col-span-2 tablet:self-end pb-4"}>Join our community</h1>
         {SectionSocialItems.map((item, index) => {
           return (
             <div className={"h-32 w-auto bg-dark5 rounded-xl flex justify-center items-center"} key={index}>
