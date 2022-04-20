@@ -3,6 +3,7 @@ import { menuDefaultItems } from "./items/menuDefaultItems";
 import { Link } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 import { WalletModal } from "../../wallet/modal/walletModal";
+import {MenuDefaultMobile} from "./mobile/menuDefaultMobile";
 
 export function MenuDefault() {
   const [active, setActive] = useState(false);

@@ -15,12 +15,12 @@ export function HeroBanner() {
         >
           Decentralized Solution for Hosting GAME Servers
         </h1>
-        <p className={"w-auto font-sans text-md tablet:text-lg p-4 ml-32 mr-32"}>
+        <p className={"w-auto font-sans hidden tablet:block phone:text-sm tablet:text-lg p-4 ml-32 mr-32"}>
           DOCKERIZEIT is a third party web application based on Decentralization
           which allows you to host Minecraft servers with ease.
         </p>
         <Link to={"/setup"}>
-          <button className={"py-2 px-4 text-accent rounded-full text-lg bg-light hover:border-2 hover:border-light hover:bg-transparent hover:text-light"}>
+          <button className={"mt-4 tablet:mt-0 py-2 px-4 text-accent rounded-full text-lg bg-light hover:border-2 hover:border-light hover:bg-transparent hover:text-light"}>
             Get Started >
           </button>
         </Link>
