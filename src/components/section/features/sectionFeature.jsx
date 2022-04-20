@@ -8,7 +8,7 @@ export function SectionFeature() {
           <h1 className={"tablet:col-span-4 tablet:self-end text-4xl pb-4 phone:ml-8 tablet:ml-0"}>Features</h1>
           {SectionFeatureItems.map((item, index)=>{
               return(
-                  <div className={"h-auto w-screen tablet:w-64 rounded-2xl bg-dark5 text-dark10 text-center place-items-center justify-center"}>
+                  <div key={index} className={"h-auto w-screen tablet:w-64 rounded-2xl bg-dark5 text-dark10 text-center place-items-center justify-center"}>
                       <h4 className={"font-bold text-2xl pt-4"}>{item.title}</h4>
                       <p className={"p-4"}>{item.description}</p>
                   </div>

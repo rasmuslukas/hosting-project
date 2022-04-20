@@ -9,3 +9,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm i sass` to install scss
 
 ### `npm install react-icons --save` to install react icons
+
+### `npm install -D tailwindcss postcss autoprefixer` to install tailwind and postcss
