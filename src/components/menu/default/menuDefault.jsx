@@ -3,22 +3,16 @@ import { menuDefaultItems } from "./items/menuDefaultItems";
 import { Link } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 import { WalletModal } from "../../wallet/modal/walletModal";
-import {MenuDefaultMobile} from "./mobile/menuDefaultMobile";
+import { IoClose } from "react-icons/io5";
 
-export function MenuDefault() {
-  const [active, setActive] = useState(false);
-
-  const showMenu = () => {
-    setActive(!active);
-  };
-
+export function MenuDefault({ isOpen, toggle }) {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
       <nav
         className={
-          "bg-dark10 fixed w-screen flex justify-between items-center h-16 z-30"
+          "bg-dark10 fixed w-screen flex justify-between items-center h-16 z-40"
         }
       >
         <Link to={"/"} className={"text-xl text-light font-semibold ml-8"}>
@@ -52,8 +46,11 @@ export function MenuDefault() {
             </button>
           </ul>
         </div>
-        <div className={"text-light text-3xl mr-8 tablet:hidden"}>
-          <HiOutlineMenu onClick={showMenu} />
+        <div
+          className={"text-light text-3xl mr-8 tablet:hidden cursor-pointer"}
+          onClick={toggle}
+        >
+          {isOpen ? <IoClose /> : <HiOutlineMenu />}
         </div>
       </nav>
       {openModal && <WalletModal closeModal={setOpenModal} />}

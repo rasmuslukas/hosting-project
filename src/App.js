@@ -6,8 +6,6 @@ import { Download } from "./pages/download/download";
 import { Setup } from "./pages/setup/setup";
 import { SetupSteps } from "./pages/setup/steps/setupSteps";
 import { Donate } from "./pages/donate/donate";
-import { WalletModalStepsAuth } from "./components/wallet/modal/steps/auth/walletModalStepsAuth";
-import { WalletModal } from "./components/wallet/modal/walletModal";
 
 export function App() {
   return (
