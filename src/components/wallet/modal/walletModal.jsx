@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { WalletProviders } from "../providers/walletProviders";
 import { WalletModalStepsAuth } from "./steps/auth/walletModalStepsAuth";
+import { Link } from "react-router-dom";
 
 export function WalletModal({ closeModal }) {
   const [openModalStepsAuth, setOpenModalStepsAuth] = useState(false);
@@ -53,7 +54,9 @@ export function WalletModal({ closeModal }) {
           closeModal(false);
         }}
       />
-      {openModalStepsAuth && <WalletModalStepsAuth closeModal={setOpenModalStepsAuth} />}
+      {openModalStepsAuth && (
+        <WalletModalStepsAuth closeModal={setOpenModalStepsAuth} />
+      )}
     </div>
   );
 }
