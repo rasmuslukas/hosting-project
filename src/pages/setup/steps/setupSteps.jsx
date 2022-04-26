@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { SetupGames } from "../games/setupGames";
 import { SetupQuestions } from "../questions/setupQuestions";
+import {Spacer} from "../../../components/spacer/spacer";
 
 export function SetupSteps() {
   const [selected, setSelected] = useState(0);
@@ -77,6 +78,7 @@ export function SetupSteps() {
           </div>
         </div>
       </div>
+      <Spacer/>
     </div>
   );
 }

@@ -110,7 +110,7 @@ export function FooterSocials() {
 
       <div className="text-center text-light p-4 bg-dark10 text-sm font-semibold">
         <h4>
-          © 2021 Copyright: Dockerize
+          © 2022 Copyright: Dockerize
           <span className={"text-accent font-bold"}>IT</span>
         </h4>
       </div>
