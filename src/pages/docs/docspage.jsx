@@ -3,7 +3,7 @@ import { Spacer } from "../../components/spacer/spacer";
 
 export function DocsPage() {
   return (
-    <div className={"pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64"}>
+    <div className={"pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64 overflow-x-hidden"}>
       <h1 className={"font-bold text-6xl pt-8 pb-8"}>Main Heading Title</h1>
       <h2 className={"font-semibold text-3xl pb-4"}>Subheading</h2>
       <p>

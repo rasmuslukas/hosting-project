@@ -7,7 +7,7 @@ export function Setup() {
   return (
     <div
       className={
-        "pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64"
+        "pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64 overflow-x-hidden"
       }
     >
       <h1 className={"text-6xl font-bold text-center p-8"}>Getting Started</h1>

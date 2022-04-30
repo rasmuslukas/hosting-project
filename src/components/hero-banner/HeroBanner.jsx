@@ -1,5 +1,4 @@
 import React from "react";
-import heroHome from "../../assets/hero-home.png";
 import { Link } from "react-router-dom";
 
 export function HeroBanner() {
@@ -20,7 +19,7 @@ export function HeroBanner() {
           which allows you to host Minecraft servers with ease.
         </p>
         <Link to={"/setup"}>
-          <button className={"mt-4 tablet:mt-0 py-2 px-4 text-accent rounded-full text-lg bg-light hover:border-2 hover:border-light hover:bg-transparent hover:text-light"}>
+          <button className={"mt-4 tablet:mt-0 py-2 px-4 text-accent rounded-full text-lg bg-light hover:border-light hover:bg-dark8 hover:text-light"}>
             Get Started >
           </button>
         </Link>

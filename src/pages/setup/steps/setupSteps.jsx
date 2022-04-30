@@ -24,8 +24,6 @@ export function SetupSteps() {
     setGame(SetupGames.find((item) => item.id === parseInt(gameId)));
   }, [gameId]);
 
-  console.log(gameId);
-  console.log(game);
   if (!game) {
     return null;
   }
@@ -33,7 +31,7 @@ export function SetupSteps() {
   return (
     <div
       className={
-        "pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64"
+        "pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64 overflow-x-hidden"
       }
     >
       <div
