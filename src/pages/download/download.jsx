@@ -8,17 +8,17 @@ export function Download() {
     <>
       <div
         className={
-          "pt-16 ml-16 mr-16 tablet:ml-32 tablet:mr-32 laptop:ml-64 laptop:mr-64 grid grid-rows-3 grid-flow-col gap-1 tablet:gap-2 justify-center laptop:grid-rows-2 laptop:grid-flow-col laptop:gap-2 justify-center"
+          "pt-16 flex flex-col gap-4 tablet:grid tablet:grid-rows-3 tablet:grid-flow-col tablet:gap-2 tablet:justify-center laptop:grid-rows-2 laptop:grid-flow-col laptop:gap-2 justify-center mb-6"
         }
       >
-        <h1 className={"font-bold text-6xl ml-4 tablet:ml-0 pt-8 col-span-4 mb-4"}>
+        <h1 className={"pt-14 tablet:col-span-4 tablet:self-start font-semibold text-6xl pb-4 phone:ml-8 tablet:ml-0"}>
           Download version 0.1
         </h1>
         {DownloadItems.map((item, index) => {
           return (
             <div
               className={
-                "cursor-pointer h-auto w-64 rounded-2xl bg-dark5 text-dark10 text-center place-items-center justify-center flex"
+                "cursor-pointer h-32 tablet:h-auto w-screen tablet:w-64 rounded-2xl rounded-2xl bg-dark5 text-dark10 text-center place-items-center justify-center flex"
               }
             >
               {item.title}{" "}
