@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { SetupGames } from "../games/setupGames";
 import { SetupQuestions } from "../questions/setupQuestions";
-import {Spacer} from "../../../components/spacer/spacer";
+import { Spacer } from "../../../components/spacer/spacer";
 
 export function SetupSteps() {
+
+  // click event handler
   const [selected, setSelected] = useState(0);
 
   const handleQuestionOnClick = () => {
@@ -16,6 +18,7 @@ export function SetupSteps() {
       }
     });
   };
+
   // get id from page id
   const { gameId } = useParams();
   const [game, setGame] = useState();
@@ -55,28 +58,36 @@ export function SetupSteps() {
         </h1>
       </div>
       <div className={"m-8"}>
-        <h2 className={"text-xl"}>{SetupQuestions[selected]}</h2>
-        <div
-          className={"grid gap-4 grid-cols-2 tablet:w-1/2"}
-          onClick={handleQuestionOnClick}
-        >
-          <div
-            className={
-              "mt-4 h-10 w-32 bg-dark6 rounded-2xl cursor-pointer hover:bg-dark8 hover:text-light flex justify-center items-center"
-            }
-          >
-            Yes
-          </div>
-          <div
-            className={
-              "mt-4 h-10 w-32 bg-dark5 rounded-2xl cursor-pointer hover:bg-dark8 hover:text-light flex justify-center items-center"
-            }
-          >
-            No
-          </div>
-        </div>
+
+        {SetupQuestions.filter((item, index) =>  index <= selected).map((item, index) => {
+          return(
+              <>
+                <div key={index} className={"text-xl mt-8"}>{item}</div>
+                <div
+                    className={"grid gap-4 grid-cols-2 tablet:w-1/2"}
+                    onClick={handleQuestionOnClick}
+                >
+                  <div
+                      className={
+                        "mt-4 h-10 w-32 bg-dark6 rounded-2xl cursor-pointer hover:bg-dark8 hover:text-light flex justify-center items-center"
+                      }
+                  >
+                    Yes
+                  </div>
+                  <div
+                      className={
+                        "mt-4 h-10 w-32 bg-dark5 rounded-2xl cursor-pointer hover:bg-dark8 hover:text-light flex justify-center items-center"
+                      }
+                  >
+                    No
+                  </div>
+                </div>
+              </>
+          )
+        })
+        }
       </div>
-      <Spacer/>
+      <Spacer />
     </div>
   );
 }
