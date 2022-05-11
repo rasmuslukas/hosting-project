@@ -24,6 +24,15 @@ export function MenuDefaultMobile({isOpen, toggle}) {
               </li>
             );
           })}
+          <li
+              className={
+                "text-light text-2xl font-sans px-2 py-2 rounded-lg hover:bg-dark8 transition ease-in-out delay-50"
+              }
+          >
+            <a href={"https://discord.gg/gJqfYm7VqC"} target={"_blank"}>
+              Discord
+            </a>
+          </li>
           <button
             className={
               "mt-4 rounded-xl border-2 text-light h-12 px-8 font-semibold bg-gradient-to-r from-red-500 via-pink-500 to-indigo-600 text-2xl "

@@ -5,7 +5,7 @@ export function HeroBanner() {
   return (
     <div
       className={
-        "w-full h-96 flex justify-center align-middle bg-hero-home items-center"
+        "w-screen h-96 flex justify-center align-middle bg-hero-home items-center"
       }
     >
       <div className={"phone:w-full tablet:w-3/5 text-center text-light absolute z-20 flex-row"}>

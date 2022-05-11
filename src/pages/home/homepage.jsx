@@ -9,7 +9,7 @@ export function Homepage() {
     <div className={"pt-16"}>
       <HeroBanner />
       <SectionFeature />
-      <SectionSocial />
+      <SectionSocial />,
       <Spacer />
     </div>
   );
