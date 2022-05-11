@@ -25,15 +25,24 @@ export function MenuDefault({ isOpen, toggle }) {
                 <li
                   key={index}
                   className={
-                    "text-light font-sans px-2 py-2 rounded-lg hover:bg-dark8 transition ease-in-out delay-50"
+                    "text-light font-sans px-2 py-2 rounded-lg hover:bg-dark8 transition ease-in-out delay-50 cursor-pointer"
                   }
                 >
                   <Link to={item.url} className={item.className}>
-                    {item.title}
+                      {item.title}
                   </Link>
                 </li>
               );
             })}
+            <li
+                className={
+                  "text-light font-sans px-2 py-2 rounded-lg hover:bg-dark8 transition ease-in-out delay-50 cursor-pointer"
+                }
+            >
+              <a href={"https://discord.gg/gJqfYm7VqC"} target={"_blank"}>
+                Discord
+              </a>
+            </li>
             <button
               className={
                 "rounded-xl border-2 text-light h-10 px-6 mr-8 font-semibold bg-gradient-to-r from-red-500 via-pink-500 to-indigo-600 text-white "

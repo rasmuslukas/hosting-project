@@ -8,10 +8,6 @@ export const menuDefaultItems=[
         url : "documentation",
     },
     {
-        title : "Discord",
-        url : "/",
-    },
-    {
         title : "Download",
         url : "download",
     },

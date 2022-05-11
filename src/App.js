@@ -6,6 +6,7 @@ import { Download } from "./pages/download/download";
 import { SetupSteps } from "./pages/setup/steps/setupSteps";
 import {BetaDevPage} from "./pages/beta/dev/betaDevPage";
 import {BetaSetupPage} from "./pages/beta/setup/betaSetupPage";
+import {DiscordPage} from "./pages/discord/discord";
 
 export function App() {
   return (
