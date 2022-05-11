@@ -3,9 +3,9 @@ import { Layout } from "./components/layout/layout";
 import { Homepage } from "./pages/home/homepage";
 import { DocsPage } from "./pages/docs/docspage";
 import { Download } from "./pages/download/download";
-import { Setup } from "./pages/setup/setup";
 import { SetupSteps } from "./pages/setup/steps/setupSteps";
-import { ErrorPage } from "./pages/error/errorPage";
+import {BetaDevPage} from "./pages/beta/dev/betaDevPage";
+import {BetaSetupPage} from "./pages/beta/setup/betaSetupPage";
 
 export function App() {
   return (
@@ -13,7 +13,7 @@ export function App() {
       <Layout>
         <Routes>
           <Route exact={true} path={"/"} element={<Homepage />} />
-          <Route exact={true} path={"/setup"} element={<Setup />} />
+          <Route exact={true} path={"/setup"} element={<BetaSetupPage />} />
           <Route
             exact={true}
             path={"/setup/:gameId"}
@@ -21,8 +21,8 @@ export function App() {
           />
           <Route exact={true} path={"/documentation"} element={<DocsPage />} />
           <Route exact={true} path={"/download"} element={<Download />} />
-          <Route exact={true} path={"/donate"} element={<ErrorPage />} />
-          <Route exact={true} path={"/dashboard"} element={<ErrorPage />} />
+          <Route exact={true} path={"/donate"} element={<BetaDevPage />} />
+          <Route exact={true} path={"/dashboard"} element={<BetaDevPage />} />
         </Routes>
       </Layout>
     </Router>

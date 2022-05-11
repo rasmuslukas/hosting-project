@@ -2,7 +2,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      'phone': '320px',
+      'phone': '420px',
       // => @media (min-width: 320px) { ... }
       'tablet': '880px',
       // => @media (min-width: 880px) { ... }
