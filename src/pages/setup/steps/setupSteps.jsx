@@ -86,6 +86,9 @@ export function SetupSteps() {
           )
         })
         }
+        <div className={"h-24 rounded-xl mt-8 flex justify-center items-center bg-dark8"}>
+          <div className={"capitalize text-light flex justify-center place-items-center phone:text-xl tablet:text-2xl"} >deploy minecraft servers (beta)</div>
+        </div>
       </div>
       <Spacer />
     </div>

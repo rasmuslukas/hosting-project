@@ -5,8 +5,7 @@ import { DocsPage } from "./pages/docs/docspage";
 import { Download } from "./pages/download/download";
 import { SetupSteps } from "./pages/setup/steps/setupSteps";
 import {BetaDevPage} from "./pages/beta/dev/betaDevPage";
-import {BetaSetupPage} from "./pages/beta/setup/betaSetupPage";
-import {DiscordPage} from "./pages/discord/discord";
+import {Setup} from "./pages/setup/setup";
 
 export function App() {
   return (
@@ -14,7 +13,7 @@ export function App() {
       <Layout>
         <Routes>
           <Route exact={true} path={"/"} element={<Homepage />} />
-          <Route exact={true} path={"/setup"} element={<BetaSetupPage />} />
+          <Route exact={true} path={"/setup"} element={<Setup />} />
           <Route
             exact={true}
             path={"/setup/:gameId"}
