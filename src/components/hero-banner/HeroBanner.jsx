@@ -15,7 +15,7 @@ export function HeroBanner() {
           Decentralized Solution for Hosting GAME Servers
         </h1>
         <p className={"w-auto font-sans hidden tablet:block phone:text-sm tablet:text-lg p-4 ml-32 mr-32"}>
-          DOCKERIZEIT is a third party web application based on Decentralization
+          Akash Servers is a third party web application based on Decentralization
           which allows you to host Minecraft servers with ease.
         </p>
         <Link to={"/setup"}>

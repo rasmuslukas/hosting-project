@@ -9,7 +9,7 @@ export function SectionSocial() {
     <>
       <div
         className={
-          "flex flex-col gap-4 tablet:grid tablet:grid-rows-3 tablet:grid-flow-col tablet:gap-2 justify-center"
+          "w-full flex flex-col gap-4 tablet:grid tablet:grid-rows-3 tablet:grid-flow-col tablet:gap-2 justify-center"
         }
       >
         <h1
@@ -21,10 +21,10 @@ export function SectionSocial() {
         </h1>
         <div
           className={
-            "h-32 w-auto bg-dark5 rounded-xl flex justify-center items-center"
+            "h-32 w-full bg-dark5 rounded-xl flex justify-center items-center gap-4"
           }
         >
-          <img src={discordIcon} className={"w-auto h-12 pr-8"} />
+          <img src={discordIcon} className={"w-16 h-auto "} />
           <div className={"w-1/2"}>
             <h2 className={"font-semibold"}>Join our Discord</h2>
             <p className={"text-sm"}>
@@ -33,7 +33,7 @@ export function SectionSocial() {
           </div>
           <div
             className={
-              "rounded-full bg-dark6 w-16 h-16 flex justify-center items-center ml-2"
+              "rounded-full bg-dark6 w-16 h-16 flex justify-center items-center"
             }
             onClick={() => {
               window.open("https://discord.gg/gJqfYm7VqC");
@@ -46,11 +46,11 @@ export function SectionSocial() {
           return (
             <div
               className={
-                "h-32 w-auto bg-dark5 rounded-xl flex justify-center items-center"
+                "h-32 w-auto bg-dark5 rounded-xl flex justify-center items-center gap-4"
               }
               key={index}
             >
-              <img src={item.icon} className={"w-auto h-12 pr-8"} />
+              <img src={item.icon} className={"w-16 h-auto"} />
               <div className={"w-1/2"}>
                 <h2 className={"font-semibold"}>{item.title}</h2>
                 <p className={"text-sm"}>{item.description}</p>
@@ -58,7 +58,7 @@ export function SectionSocial() {
               <Link to={item.url}>
                 <div
                   className={
-                    "rounded-full bg-dark6 w-16 h-16 flex justify-center items-center ml-2"
+                    "rounded-full bg-dark6 w-16 h-16 flex justify-center items-center "
                   }
                 >
                   <FaArrowRight className={"w-auto h-6 cursor-pointer"} />

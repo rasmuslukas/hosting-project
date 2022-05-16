@@ -16,7 +16,7 @@ export function MenuDefault({ isOpen, toggle }) {
         }
       >
         <Link to={"/"} className={"text-xl text-light font-semibold ml-8"}>
-          Dockerize<span className={"text-accent"}>IT</span>
+          <span className={"text-accent"}>Akash</span>Servers
         </Link>
         <div className={"flex items-center justify-end"}>
           <ul className={"hidden tablet:flex gap-6 font-semibold items-center"}>

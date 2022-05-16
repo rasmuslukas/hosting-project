@@ -6,8 +6,7 @@ export function FooterBottom() {
         <div className="text-center text-light pb-4 bg-dark10 text-sm font-semibold">
             <FooterHeader/>
             <h4>
-                © 2022 Copyright: Dockerize
-                <span className={"text-accent font-bold"}>IT</span>
+                © 2022 Copyright: Akash Servers
             </h4>
         </div>
     );
